@@ -1,0 +1,15 @@
+{% extends "examen/base_sysqa.html" %}
+{% block content %}
+    {% for post in posts2 %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+              <a class="mr-2" href="#">{{ post.Onderdeel }}</a>
+              <small class="text-muted">{{ post.Reeks }}</small>
+            </div>
+            <h2><a class="article-title" href="#">{{ post.Antwoord }}</a></h2>
+            <p class="article-content">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
