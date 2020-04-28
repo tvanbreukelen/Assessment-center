@@ -7,6 +7,7 @@ class Post(models.Model):
     Reeks = models.TextField()
     content = models.TextField()
     
+    
     #  User hier bij voegen?????
 
 
