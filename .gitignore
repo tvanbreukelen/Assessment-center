@@ -58,6 +58,11 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
+<<<<<<< HEAD
+=======
+db.sqlite3
+db.sqlite3-journal
+>>>>>>> 23d71024e73110c5555b1e0d68c383a095faf289
 
 # Flask stuff:
 instance/
@@ -107,7 +112,10 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+<<<<<<< HEAD
 Environments/
+=======
+>>>>>>> 23d71024e73110c5555b1e0d68c383a095faf289
 
 # Spyder project settings
 .spyderproject
