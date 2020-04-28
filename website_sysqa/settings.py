@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -119,8 +120,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
+DEFAULT_FILE_STORAGE = 'website_sysqa.custom_azure.AzureMediaStorage'
+STATICFILES_STORAGE = 'website_sysqa.custom_azure.AzureStaticStorage'
+
+STATIC_LOCATION = "static"
+MEDIA_LOCATION = "media"
+
+AZURE_ACCOUNT_NAME = "assessmentcenter"
+AZURE_CUSTOM_DOMAIN = 'assessmentcenter.blob.core.windows.net'
 STATIC_URL = 'https://assessmentcenter.blob.core.windows.net/static/'
-
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
 MEDIA_URL = 'https://assessmentcenter.blob.core.windows.net/media/'
