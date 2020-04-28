@@ -126,7 +126,7 @@ STATICFILES_STORAGE = 'website_sysqa.custom_azure.AzureStaticStorage'
 STATIC_LOCATION = "static"
 MEDIA_LOCATION = "media"
 
-AZURE_ACCOUNT_NAME = "assessmentcenter"
-AZURE_CUSTOM_DOMAIN = 'assessmentcenter.blob.core.windows.net'
-STATIC_URL = 'https://assessmentcenter.blob.core.windows.net/static/'
-MEDIA_URL = 'https://assessmentcenter.blob.core.windows.net/media/'
+AZURE_ACCOUNT_NAME = "storagesysqaac"
+AZURE_CUSTOM_DOMAIN = 'storagesysqaac.blob.core.windows.net'
+STATIC_URL = 'https://storagesysqaac.blob.core.windows.net/static/'
+MEDIA_URL = 'https://storagesysqaac.blob.core.windows.net/media/'
