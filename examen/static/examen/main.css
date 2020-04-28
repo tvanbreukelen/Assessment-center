@@ -35,6 +35,13 @@ body {
     border-radius: 3px;
     margin-bottom: 20px;
   }
+  .vragen-section {
+    background: #009FDF;
+    padding: 10px 20px;
+    border: 1px solid #009FDF;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
   
   .article-title {
     color: #444444;
@@ -81,4 +88,25 @@ body {
   
   .account-heading {
     font-size: 2.5rem;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
   }

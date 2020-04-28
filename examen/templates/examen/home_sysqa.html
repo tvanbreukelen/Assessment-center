@@ -1,4 +1,9 @@
 {% extends "examen/base_sysqa.html" %}
+
+{% block logo %} 
+<img src="media/sysqalogo.png" width="150" height="50" style="float:left">
+{% endblock logo %}
+
 {% block content %}
     {% for post in posts %}
         <article class="media content-section">

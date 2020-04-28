@@ -1,26 +1,27 @@
 from django.shortcuts import render
 from .models import Post
-
-
+from django.core.paginator import Paginator
 
 
 def home(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'examen/home_sysqa.html', context)
+    
+    posts = Post.objects.all()
+    paginator = Paginator(posts, 1)
+    page = request.GET.get('page')
+    posts = paginator.get_page(page)
+    return render(request, 'examen/home_sysqa.html', {'posts': posts})
 
 def v1(request):
-    context = {
-        'posts': posts1
-    }
-    return render(request, 'examen/home_sysqa.html', context)
+    posts = Post.objects.all()
+
+
+    return render(request, 'examen/v1_sysqa.html', {'posts': posts})
 
 def v2(request):
     context = {
         'posts': posts2
     }
-    return render(request, 'examen/home_sysqa.html', context)
+    return render(request, 'examen/_sysqa.html', context)
 
 def v3(request):
     return HttpResponse('<h1>Vraag 3</h1>')

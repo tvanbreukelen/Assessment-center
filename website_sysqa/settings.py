@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts.apps.AccountsConfig',
     'examen.apps.ExamenConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -118,6 +119,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'https://assessmentcenter.blob.core.windows.net/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+MEDIA_URL = 'https://assessmentcenter.blob.core.windows.net/media/'

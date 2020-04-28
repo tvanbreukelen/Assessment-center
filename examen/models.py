@@ -6,6 +6,12 @@ class Post(models.Model):
     Onderdeel = models.CharField(max_length=100, null=True, blank=True)
     Reeks = models.TextField()
     content = models.TextField()
-    Antwoord = models.TextField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE) 
+    
+    #  User hier bij voegen?????
+
+
+
+
+
+
 
