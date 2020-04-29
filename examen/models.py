@@ -6,7 +6,7 @@ class Post(models.Model):
     Onderdeel = models.CharField(max_length=100, null=True, blank=True)
     Reeks = models.TextField()
     content = models.TextField()
-    models.connection.close()
+    
     
     
     #  User hier bij voegen?????
