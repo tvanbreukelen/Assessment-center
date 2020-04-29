@@ -6,9 +6,6 @@ from django.core.paginator import Paginator
 def home(request):
     
     posts = Post.objects.all()
-    paginator = Paginator(posts, 1)
-    page = request.GET.get('page')
-    posts = paginator.get_page(page)
     return render(request, 'examen/home_sysqa.html', {'posts': posts})
 
 def v1(request):
