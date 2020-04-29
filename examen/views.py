@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Post
-from django.core.paginator import Paginator
+
 
 
 def home(request):
